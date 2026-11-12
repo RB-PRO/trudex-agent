@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "leads_result",
+  "description": "Out-файл агента: массив компаний. Одна запись = один ИНН из in-файла. Выручка в тыс. руб., целое.",
+
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["inn", "name", "phone", "email",
+                 "director_last", "director_first", "director_middle",
+                 "revenue_2021", "revenue_2022", "revenue_2023", "revenue_2024",
+                 "revenue_2025", "revenue_2026", "revenue_2027", "revenue_2028", "revenue_2029",
+                 "reg_date", "site", "employees", "founders", "bankruptcy_stage"],
+    "properties": {
+
+      "inn":              { "type": "string", "pattern": "^\\d{10}(\\d{2})?$",
+                            "description": "ИНН из in-файла" },
+      "name":             { "type": "string", "description": "Название по ЕГРЮЛ" },
+
+      "phone":            { "type": "string",
+                            "description": "Формат +71231231212. Несколько номеров через '; ' — или пусто" },
+      "email":            { "type": "string",
+                            "description": "Просто email — или пусто" },
+
+      "director_last":    { "type": "string", "description": "Фамилия директора" },
+      "director_first":   { "type": "string", "description": "Имя директора" },
+      "director_middle":  { "type": "string", "description": "Отчество директора" },
+
+      "revenue_2021":     { "type": ["integer", "null"], "description": "тыс. руб." },
+      "revenue_2022":     { "type": ["integer", "null"] },
+      "revenue_2023":     { "type": ["integer", "null"] },
+      "revenue_2024":     { "type": ["integer", "null"] },
+      "revenue_2025":     { "type": ["integer", "null"] },
+      "revenue_2026":     { "type": ["integer", "null"], "description": "почти всегда null — год ещё не отчитался" },
+      "revenue_2027":     { "type": ["integer", "null"] },
+      "revenue_2028":     { "type": ["integer", "null"] },
+      "revenue_2029":     { "type": ["integer", "null"] },
+
+      "reg_date":         { "type": "string", "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$",
+                            "description": "Формат 21.09.2026. Не найдено → пусто" },
+      "site":             { "type": "string",
+                            "description": "ОЧЕНЬ ВАЖНО: домен без http(s)://, например glims.ru — или пусто" },
+      "employees":        { "type": ["integer", "null"],
+                            "description": "Просто число. Не найдено → null" },
+      "founders":         { "type": "string",
+                            "description": "ФИО строкой, несколько через '; ' — или пусто" },
+
+      "bankruptcy_stage": { "type": "string",
+                            "enum": ["В стадии банкротства", "В стадии ликвидации", "Действующее"] }
+    }
+  }
+}

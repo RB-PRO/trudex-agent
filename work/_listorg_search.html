@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='ru' lang='ru' dir='ltr'>
+<head>
+<title>List-Org</title>
+<meta http-equiv="content-language" content="ru">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name=viewport content="width=device-width, initial-scale=1">
+<script defer="defer" type="text/javascript" src="/js/jquery.min.js"></script>
+<link rel="dns-prefetch" href="https://cdn.list-org.com">
+<link rel="preconnect" href="https://cdn.list-org.com" crossorigin>
+<link rel="preload" href="https://cdn.list-org.com/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="style" href="https://cdn.list-org.com/style/fontawesome.min.css"/>
+<script>
+const caramelJS=document.createElement('script'); 
+caramelJS.src="https://cdn.digitalcaramel.com/caramel.js";
+caramelJS.async=true;
+document.head.appendChild(caramelJS);
+</script>
+<script>window.yaContextCb = window.yaContextCb || []</script>
+<script src="https://yandex.ru/ads/system/context.js" async></script>
+<link href="https://cdn.list-org.com/style/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdn.list-org.com/style/main.css?ver=73"/>
+</head>
+<body class="bg-light">
+<div class="btn btn-outline-secondary btn-sm btn_up scroll_top"><i class="fas fa-arrow-up"></i></div>
+<div class="container-fluid bg-light p-0">
+<div class="container-fluid bg-white p-0" style="box-shadow:0 1px 7px 0 rgba(0, 0, 0, 0.1)">
+<div class="main">
+<header class="">
+<nav class="navbar navbar-expand-lg navbar-light py-0" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+ <div class="container-fluid" itemprop="about" itemscope="" itemtype="https://schema.org/ItemList">
+  <a href="/" class="navbar-brand me-5">
+    <img src="https://cdn.list-org.com/image/logo.png" width="145px" height="51px">
+  </a>
+  <button type="button" class="navbar-toggler cd-primary-nav-trigger" style="top:9px;right:3px;" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+  	<span class="cd-menu-icon" style="margin-top:0px"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+<ul class="navbar-nav ms-auto">
+<form class="search-width pt-1 me-lg-3 input-group" method=GET action="/search">
+<input type="search" class="autocomplete-input form-control form-control-dark" placeholder="Поиск..." aria-label="Поиск" name="val">
+<button class="btn btn-outline-secondary" type="submit"><i class="fa fa-search"></i></button>
+</form>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="dropdown10" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-search fa-fw"></i> Поиск</a>
+<ul class="dropdown-menu" aria-labelledby="dropdown10">
+<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList"><a itemprop="url" class="dropdown-item" href="/search"><i class="fa-sm fa fa-angle-double-right fa-fw"></i> Расширенный поиск</a><meta itemprop="name" content="Поиск организаций по всем данным"/></li>
+<div class="dropdown-divider"></div>
+<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList"><a itemprop="url" class="dropdown-item" href="/batch_search"><i class="fa-sm fa fa-angle-double-right fa-fw"></i> Пакетный поиск</a><meta itemprop="name" content="Пакетный поиск организаций"/></li>
+<div class="dropdown-divider"></div>
+<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList"><a itemprop="url" class="dropdown-item" href="/?search=inn"><i class="fa-sm fa fa-angle-double-right fa-fw"></i> Поиск по ИНН</a><meta itemprop="name" content="Поиск организаций по ИНН"/></li>
+<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList"><a itemprop="url" class="dropdown-item" href="/?search=ogrn"><i class="fa-sm fa fa-angle-double-right fa-fw"></i> Поиск по ОГРН</a><meta itemprop="name" content="Поиск организаций по ОГРН"/></li>
+<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList"><a itemprop="url" class="dropdown-item" href="/?search=okpo"><i class="fa-sm fa fa-angle-double-right fa-fw"></i> Поиск по ОКПО</a><meta itemprop="name" content="Поиск организаций по ОКПО"/></li>
+<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList"><a itemprop="url" class="dropdown-item" href="/?search=phone"><i class="fa-sm fa fa-phone fa-fw"></i> Поиск по телефону</a><meta itemprop="name" content="Поиск организаций по телефону"/></li>
+<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList"><a itemprop="url" class="dropdown-item" href="/?search=name"><i class="fa-sm fa far fa-file-alt fa-fw"></i> Поиск по наименованию</a><meta itemprop="name" content="Поиск организаций по наименованию"/></li>
+<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList"><a itemprop="url" class="dropdown-item" href="/?search=boss"><i class="fa-sm fa fas fa-user-tie fa-fw"></i> Поиск по руководителю</a><meta itemprop="name" content="Поиск организаций по руководителю"/></li>
+<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList"><a itemprop="url" class="dropdown-item" href="/?search=address"><i class="fa-sm fa fa-map-marker-alt fa-fw"></i> Поиск по адресу</a><meta itemprop="name" content="Поиск организаций по адресу"/></li>
+<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList"><a itemprop="url" class="dropdown-item" href="/?search=bic"><i class="fa-sm fa fa-university fa-fw"></i> Поиск банка по БИК</a><meta itemprop="name" content="Поиск банка по БИК"/></li>
+<div class="dropdown-divider"></div>
+<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList"><a itemprop="url" class="dropdown-item" href="/?search=fio"><i class="fa-sm fa fa-user-friends fa-fw"></i> Поиск предпринимателей</a><meta itemprop="name" content="Поиск предпринимателей"/></li>
+<div class="dropdown-divider"></div>
+<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList"><a itemprop="url" class="dropdown-item" href="/?search=trademark"><i class="fa-sm fa fa-trademark fa-fw"></i> Поиск товарных знаков</a><meta itemprop="name" content="Поиск товарных знаков"/></li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="dropdown10" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-list-ul fa-fw"></i> Списки</a>
+<ul class="dropdown-menu" aria-labelledby="dropdown10">
+<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList"><a itemprop="url" class="dropdown-item" href="/okato"><i class="fa-sm fa fa-globe fa-fw"></i> Организаций по регионам (ОКАТО)</a><meta itemprop="name" content="Список организаций по регионам (ОКАТО)"/></li>
+<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList"><a itemprop="url" class="dropdown-item" href="/okved2"><i class="fa-sm fa fa-list-ul fa-fw"></i> Организаций по отраслям (ОКВЭД)</a><meta itemprop="name" content="Список организаций по отраслям (ОКВЭД)"/></li>
+<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList"><a itemprop="url" class="dropdown-item" href="/mans"><i class="fa-sm fa far fa-address-book fa-fw"></i> Предпринимателей</a><meta itemprop="name" content="Список предпринимателей по алфавиту"/></li>
+</ul>
+</li>
+<li class="nav-item mb-3 mb-lg-0">
+<a href="/account/favorites" title="Личный кабинет" class="nav-link"><i class="fa far fa-user fa-fw"></i>&nbsp<span class="d-lg-none">Личный кабинет</span></a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+</div>
+</div>
+<div class="main">
+<div class="content">
+<span class='h1'>Проверка, что Вы не робот</span>
+<div class='card w-100 p-1 p-lg-3 mt-1'>
+<br><form name=frm method=POST>Вы слишком часто обращались к сайту и мы хотим убедиться, что вы не робот.<br><br>
+<link rel="stylesheet" href="/assets/captcha_checkbox.css?v=3">
+<div class="cb"
+     id="cb_74fa38a753"
+     data-captcha-checkbox
+     data-state="idle"
+     data-verify-url="/captcha_checkbox_verify.php"
+     data-refresh-url="/captcha_checkbox_refresh.php" data-pow-challenge="b728be669ec499eec75bc9b55a6022e3" data-pow-difficulty="20">
+    <input type="hidden" name="cb_token"   data-cb-token   value="tyi-Zp7Eme7HW8m1WmAi4wEAavVxKWr1clU.9b4xtc4mMIjGaYGwLhK9ki-jlqWuQsEv73bOp3qXUik">
+    <input type="hidden" name="cb_ticket"  data-cb-ticket  value="">
+    <input type="hidden" name="cb_signals" data-cb-signals value="">
+    <input type="hidden" name="cb_pow"     data-cb-pow     value="">
+    <input class="cb-hp"
+           type="text"
+           name="cb_hp"
+           tabindex="-1"
+           autocomplete="off"
+           aria-hidden="true"
+           value="">
+
+    <label class="cb-row">
+        <span class="cb-box" data-cb-box aria-hidden="true">
+            <span class="cb-spinner" data-cb-spinner></span>
+            <svg class="cb-check" data-cb-check viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 12 L10 18 L20 6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <svg class="cb-cross" data-cb-cross viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6 6 L18 18 M18 6 L6 18" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+        </span>
+        <input type="checkbox"
+               class="cb-input"
+               data-cb-input
+               aria-label="Я не робот"
+               aria-describedby="cb_74fa38a753_status">
+        <span id="cb_74fa38a753_status" class="cb-status" data-cb-status aria-live="polite">Я не робот</span>
+    </label>
+
+    <div class="cb-challenge" data-cb-challenge hidden></div>
+</div>
+<script src="/assets/captcha_checkbox.js?v=3" defer></script><input type="hidden" value="/search?val=7731169647&amp;type=inn" name="from"><br>Мне не видно капчу с галочкой, <a href="/bot?type=slider&from=%2Fsearch%3Fval%3D7731169647%26type%3Dinn">буду решать капчу</a><br><br><input type="hidden" value="" name="back"><br><input class="btn btn-primary m-1" type="submit" value=" Проверить! "></form></div></div>
+<nav class='menu'>
+<div class='dmenu sticky' id='kjewhhf4'><!--noindex-->
+<div id="yandex_rtb_R-A-1572957-8"></div>
+<script>
+var rr_8=0;
+function render_8(){
+window.yaContextCb.push(()=>{
+Ya.Context.AdvManager.render({
+renderTo: 'yandex_rtb_R-A-1572957-8',
+blockId: 'R-A-1572957-8'
+})
+});
+rr_8++;
+if(rr_8<8)setTimeout(function(){render_8();},40000);
+}
+render_8();
+</script>
+<!--/noindex-->
+</div></nav>
+<!--noindex-->
+<div class=footer>
+<div id='bl_970b'></div>
+<div class="footer_b"><!--noindex-->
+<div id="yandex_rtb_R-A-1572957-5"></div>
+<script>window.yaContextCb.push(()=>{
+Ya.Context.AdvManager.render({
+renderTo: 'yandex_rtb_R-A-1572957-5',
+blockId: 'R-A-1572957-5'
+})
+})</script>
+<!--/noindex--></div><br><br>
+<div id="google_ads_iframe_10">При копировании материалов гиперссылка на www.list-org.com обязательна.</div>
+<div class="info_cookie">Мы используем метаданные пользователя (cookie, данные об ip-адресе) для функционирования сайта. Если вы не хотите, чтобы эти ваши данные обрабатывались, то вам следует покинуть сайт.</div>
+</div>
+<!--/noindex-->
+</div>
+</body>
+<link rel="stylesheet" type="text/css" media="screen" href="https://cdn.list-org.com/style/fontawesome.min.css"/>
+<script defer="defer" type="text/javascript" src="https://cdn.list-org.com/js/jquery.autocomplete.min.js"></script>
+<script defer="defer" type="text/javascript" src="https://cdn.list-org.com/js/company.js?ver=73"></script>
+<script defer="defer" type="text/javascript" src="https://cdn.list-org.com/js/bootstrap.bundle.min.js"></script>
+</html>

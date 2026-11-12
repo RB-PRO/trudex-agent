@@ -1,0 +1,616 @@
+{
+ "7731169647": {
+  "inn": "7731169647",
+  "name": "ООО \"СТОРХАН\"",
+  "ogrn": "1027739188190",
+  "card_inn": "7731169647",
+  "status": "Действующая компания",
+  "reg_date": "05.06.2002",
+  "director": "Сердюк Николай Григорьевич",
+  "director_role": "",
+  "founders": [
+   "Ханин Дмитрий Александрович",
+   "Ханин Сергей Александрович",
+   "Ханин Александр Данилович"
+  ],
+  "phones": [
+   "+74959332400",
+   "+74959808785"
+  ],
+  "emails": [
+   "evkochetova@doorhan.ru",
+   "jamerkulova@doorhan.ru",
+   "ok@doorhan.ru"
+  ],
+  "site": "",
+  "efrsb_text": "Нет сообщений о банкротстве <div class=\"mb-3\"",
+  "efrsb": "clean",
+  "arb_text": "55 дел в качестве истца и 19 дел в качестве ответчика",
+  "arb_bankruptcy_case": false,
+  "revenue": {
+   "2021": 13800985,
+   "2022": 12853513,
+   "2023": 17546450,
+   "2024": 20870249,
+   "2025": 18960168
+  }
+ },
+ "5027184820": {
+  "inn": "5027184820",
+  "name": "ООО \"ССП\"",
+  "ogrn": "1125027003914",
+  "card_inn": "5027184820",
+  "status": "",
+  "reg_date": "20.03.2012",
+  "director": "Звонарев Максим Алексеевич",
+  "director_role": "Генеральный директор",
+  "founders": [
+   "Звонарев Максим Алексеевич"
+  ],
+  "phones": [
+   "+74956692803",
+   "+74957406491",
+   "+74995503115"
+  ],
+  "emails": [
+   "5071097@bk.ru",
+   "info.zakupki.ssp@mail.ru"
+  ],
+  "site": "",
+  "efrsb_text": "Нет сообщений о банкротстве <div class=\"mb-3\"",
+  "efrsb": "clean",
+  "arb_text": "13 дел в качестве истца и 4 дела в качестве ответчика",
+  "arb_bankruptcy_case": false,
+  "revenue": {
+   "2021": 117228,
+   "2022": 97863,
+   "2023": 98420,
+   "2024": 223683,
+   "2025": 195118
+  }
+ },
+ "5024144699": {
+  "inn": "5024144699",
+  "name": "ООО \"ЛАЙФ СТРОЙ\"",
+  "ogrn": "1145024003630",
+  "card_inn": "5024144699",
+  "status": "Действующая компания",
+  "reg_date": "05.05.2014",
+  "director": "Фомин Евгений Евгеньевич",
+  "director_role": "",
+  "founders": [
+   "Фомин Евгений Евгеньевич",
+   "Колмыков Дмитрий Владимирович"
+  ],
+  "phones": [
+   "+74951504577",
+   "+74955325134",
+   "+79150538846"
+  ],
+  "emails": [
+   "info@lifestroy.com"
+  ],
+  "site": "",
+  "efrsb_text": "Нет сообщений о банкротстве <div class=\"mb-3\"",
+  "efrsb": "clean",
+  "arb_text": "2 дела в качестве ответчика",
+  "arb_bankruptcy_case": false,
+  "revenue": {
+   "2021": 28072,
+   "2022": 13707,
+   "2023": 16622,
+   "2024": 1740,
+   "2025": 12019
+  }
+ },
+ "7720446803": {
+  "inn": "7720446803",
+  "name": "ООО \"ТИМ\"",
+  "ogrn": "1187746891199",
+  "card_inn": "7720446803",
+  "status": "Действующая компания",
+  "reg_date": "24.10.2018",
+  "director": "Мартынова Ольга Станиславовна",
+  "director_role": "Генральный директор",
+  "founders": [
+   "Мартынова Ольга Станиславовна"
+  ],
+  "phones": [
+   "+79998374670"
+  ],
+  "emails": [
+   "alexfit@bk.ru"
+  ],
+  "site": "",
+  "efrsb_text": "Нет сообщений о банкротстве <div class=\"mb-3\"",
+  "efrsb": "clean",
+  "arb_text": "",
+  "arb_bankruptcy_case": false,
+  "revenue": {
+   "2021": 14898,
+   "2022": 8318,
+   "2023": 19976,
+   "2024": 60940,
+   "2025": 57162
+  }
+ },
+ "5032320115": {
+  "inn": "5032320115",
+  "name": "ФГБУ \"38 НИИИ БТВТ\" МИНОБОРОНЫ РОССИИ",
+  "ogrn": "1207700270360",
+  "card_inn": "5032320115",
+  "status": "Действующая организация",
+  "reg_date": "03.08.2020",
+  "director": "Агарков Павел Иванович",
+  "director_role": "Начальник",
+  "founders": [
+   "Организации"
+  ],
+  "phones": [
+   "+79108733383"
+  ],
+  "emails": [
+   "38niii_fin@mil.ru"
+  ],
+  "site": "",
+  "efrsb_text": "Нет сообщений о банкротстве <div class=\"mb-3\"",
+  "efrsb": "clean",
+  "arb_text": "3 дела в качестве истца и 1 дело в качестве ответчика",
+  "arb_bankruptcy_case": false,
+  "revenue": {}
+ },
+ "9729400050": {
+  "inn": "9729400050",
+  "name": "ООО \"А-БЕТОН\"",
+  "ogrn": "1257700184928",
+  "card_inn": "9729400050",
+  "status": "Действующая компания",
+  "reg_date": "17.04.2025",
+  "director": "Михеев Алексей Вячеславович",
+  "director_role": "",
+  "founders": [
+   "Организации"
+  ],
+  "phones": [
+   "+79169679190"
+  ],
+  "emails": [],
+  "site": "",
+  "efrsb_text": "Нет сообщений о банкротстве <div class=\"mb-3\"",
+  "efrsb": "clean",
+  "arb_text": "1 дело в качестве ответчика, от 10 ноября 2026 года",
+  "arb_bankruptcy_case": false,
+  "revenue": {}
+ },
+ "7730250045": {
+  "inn": "7730250045",
+  "name": "АО \"ГАЗПРОМ ШЕЛЬФПРОЕКТ\"",
+  "ogrn": "1197746185691",
+  "card_inn": "7730250045",
+  "status": "Действующая компания",
+  "reg_date": "13.03.2019",
+  "director": "Коробков Александр Николаевич",
+  "director_role": "",
+  "founders": [
+   "Организации"
+  ],
+  "phones": [
+   "+74951280404"
+  ],
+  "emails": [
+   "7730250045@mail.ru",
+   "guseynova.olga@aurora-ipm.ru"
+  ],
+  "site": "",
+  "efrsb_text": "Нет сообщений о банкротстве <div class=\"mb-3\"",
+  "efrsb": "clean",
+  "arb_text": "4 дела в качестве истца и 14 дел в качестве ответчика",
+  "arb_bankruptcy_case": false,
+  "revenue": {
+   "2021": 29367834,
+   "2022": 61157091
+  }
+ },
+ "2462222097": {
+  "inn": "2462222097",
+  "name": "ООО \"СИБИРСКАЯ ТЕПЛОСБЫТОВАЯ КОМПАНИЯ\"",
+  "ogrn": "1122468040584",
+  "card_inn": "2462222097",
+  "status": "Действующая компания",
+  "reg_date": "24.07.2012",
+  "director": "Горбатенко Андрей Анатольевич",
+  "director_role": "Генеральный директор",
+  "founders": [
+   "Организации"
+  ],
+  "phones": [
+   "+73852599437",
+   "+73912579530",
+   "+79230007831"
+  ],
+  "emails": [
+   "glazevaev@sibgenco.ru",
+   "landenoksv@sibgenco.ru",
+   "rokotovais@sibgenco.ru"
+  ],
+  "site": "",
+  "efrsb_text": "Нет сообщений о банкротстве <div class=\"mb-3\"",
+  "efrsb": "clean",
+  "arb_text": "114 дел в качестве истца и 8 дел в качестве ответчика",
+  "arb_bankruptcy_case": false,
+  "revenue": {
+   "2021": 2477647,
+   "2022": 2659046,
+   "2023": 2856543
+  }
+ },
+ "5048028162": {
+  "inn": "5048028162",
+  "name": "ООО \"ГРАДСТРОЙ\"",
+  "ogrn": "1115048002563",
+  "card_inn": "5048028162",
+  "status": "Действующая компания",
+  "reg_date": "16.12.2011",
+  "director": "Алиев Максим Кузиевич",
+  "director_role": "",
+  "founders": [
+   "Юсуфов Арнольд Владимирович",
+   "Алиев Максим Кузиевич",
+   "Пашкевич Игорь Александрович"
+  ],
+  "phones": [
+   "+74951279427",
+   "+74967270563",
+   "+79257403112"
+  ],
+  "emails": [
+   "gradstroy2@inmessage.ru"
+  ],
+  "site": "",
+  "efrsb_text": "Нет сообщений о банкротстве <div class=\"mb-3\"",
+  "efrsb": "clean",
+  "arb_text": "5 дел в качестве ответчика",
+  "arb_bankruptcy_case": false,
+  "revenue": {
+   "2021": 467877,
+   "2022": 171192,
+   "2023": 18834,
+   "2024": 173539,
+   "2025": 149900
+  }
+ },
+ "5024250129": {
+  "inn": "5024250129",
+  "name": "ООО \"МАММИНА\"",
+  "ogrn": "1255000000090",
+  "card_inn": "5024250129",
+  "status": "Действующая компания",
+  "reg_date": "09.01.2025",
+  "director": "Кушнарева Ольга Алексеевна",
+  "director_role": "",
+  "founders": [
+   "Кушнарева Ольга Алексеевна"
+  ],
+  "phones": [],
+  "emails": [
+   "mammina-restaurant@yandex.ru"
+  ],
+  "site": "",
+  "efrsb_text": "Нет сообщений о банкротстве <div class=\"mb-3\"",
+  "efrsb": "clean",
+  "arb_text": "10 дел в качестве ответчика",
+  "arb_bankruptcy_case": false,
+  "revenue": {}
+ },
+ "9709069739": {
+  "inn": "9709069739",
+  "name": "ООО \"ЛАНДО-СТРОЙ\"",
+  "ogrn": "1217700097482",
+  "card_inn": "9709069739",
+  "status": "Действующая компания",
+  "reg_date": "04.03.2021",
+  "director": "Бесклеткин Леонид Леонидович",
+  "director_role": "Генеральный директор",
+  "founders": [
+   "Краснощекова Ольга Александровна",
+   "Бесклеткин Леонид Леонидович"
+  ],
+  "phones": [
+   "+79851289009"
+  ],
+  "emails": [
+   "lando_2021@mail.ru"
+  ],
+  "site": "",
+  "efrsb_text": "Нет сообщений о банкротстве <div class=\"mb-3\"",
+  "efrsb": "clean",
+  "arb_text": "18 дел в качестве ответчика",
+  "arb_bankruptcy_case": false,
+  "revenue": {
+   "2021": 7551,
+   "2022": 8202,
+   "2023": 36115,
+   "2024": 65080,
+   "2025": 50192
+  }
+ },
+ "9703127818": {
+  "inn": "9703127818",
+  "name": "ООО \"СК НИК-МОНОЛИТ\"",
+  "ogrn": "1227700921403",
+  "card_inn": "9703127818",
+  "status": "Действующая компания",
+  "reg_date": "29.12.2022",
+  "director": "Партин Владимир Николаевич",
+  "director_role": "Генеральный директор",
+  "founders": [
+   "Партин Владимир Николаевич"
+  ],
+  "phones": [
+   "+79614988868"
+  ],
+  "emails": [
+   "ysk.v.nik@mail.ru"
+  ],
+  "site": "",
+  "efrsb_text": "Нет сообщений о банкротстве <div class=\"mb-3\"",
+  "efrsb": "clean",
+  "arb_text": "2 дела в качестве ответчика",
+  "arb_bankruptcy_case": false,
+  "revenue": {
+   "2022": 59186,
+   "2023": 12661
+  }
+ },
+ "9734015568": {
+  "inn": "9734015568",
+  "name": "ООО \"АКАДЕМИЯ БРИЛЛИАНТОВ\"",
+  "ogrn": "1257700301935",
+  "card_inn": "9734015568",
+  "status": "Действующая компания",
+  "reg_date": "07.07.2025",
+  "director": "Саранцева Анастасия Александровна",
+  "director_role": "",
+  "founders": [
+   "Организации"
+  ],
+  "phones": [],
+  "emails": [],
+  "site": "",
+  "efrsb_text": "Нет сообщений о банкротстве <div class=\"mb-3\"",
+  "efrsb": "clean",
+  "arb_text": "",
+  "arb_bankruptcy_case": false,
+  "revenue": {}
+ },
+ "5047126449": {
+  "inn": "5047126449",
+  "name": "ООО \"ТИТАН\"",
+  "ogrn": "1115047012013",
+  "card_inn": "5047126449",
+  "status": "",
+  "reg_date": "10.08.2011",
+  "director": "Макаров Игорь Викторович",
+  "director_role": "",
+  "founders": [
+   "Погосов Ашот Гагикович"
+  ],
+  "phones": [
+   "+74956629842",
+   "+79168133237",
+   "+79250098574"
+  ],
+  "emails": [
+   "info@titan-build.com"
+  ],
+  "site": "",
+  "efrsb_text": "В реестре найдено 36 сообщений , относящихся к этой компании, последнее сообщение от 02.11.2026 <div class=\"mb-3\"",
+  "efrsb": "mention",
+  "arb_text": "9 дел в качестве истца и 45 дел в качестве ответчика",
+  "arb_bankruptcy_case": false,
+  "revenue": {
+   "2021": 236562,
+   "2022": 116895
+  }
+ },
+ "6316192733": {
+  "inn": "6316192733",
+  "name": "ООО \"МС-ТЕХ\"",
+  "ogrn": "1136316011138",
+  "card_inn": "6316192733",
+  "status": "Действующая компания",
+  "reg_date": "19.11.2013",
+  "director": "Кузовчиков Вячеслав Валерьевич",
+  "director_role": "",
+  "founders": [
+   "Кузовчиков Вячеслав Валерьевич"
+  ],
+  "phones": [],
+  "emails": [
+   "info@rosmagistral.ru"
+  ],
+  "site": "",
+  "efrsb_text": "Нет сообщений о банкротстве <div class=\"mb-3\"",
+  "efrsb": "clean",
+  "arb_text": "7 дел в качестве истца и 24 дела в качестве ответчика",
+  "arb_bankruptcy_case": false,
+  "revenue": {
+   "2021": 312332,
+   "2022": 433570,
+   "2023": 437827,
+   "2024": 105206,
+   "2025": 254117
+  }
+ },
+ "3305037917": {
+  "inn": "3305037917",
+  "name": "ООО \"АСКОНА-ВЕК\"",
+  "ogrn": "1033302204264",
+  "card_inn": "3305037917",
+  "status": "Действующая компания",
+  "reg_date": "07.03.2001",
+  "director": "Ершов Роман Владимирович",
+  "director_role": "",
+  "founders": [
+   "Организации"
+  ],
+  "phones": [
+   "+79065614512",
+   "+79107716768",
+   "+79607287905"
+  ],
+  "emails": [
+   "a.iakubova@askona.ru",
+   "askona@kovrov.ru",
+   "korotkovaee@gk-gw.ru"
+  ],
+  "site": "",
+  "efrsb_text": "Нет сообщений о банкротстве <div class=\"mb-3\"",
+  "efrsb": "clean",
+  "arb_text": "28 дел в качестве истца и 3 дела в качестве ответчика",
+  "arb_bankruptcy_case": false,
+  "revenue": {
+   "2021": 17447173,
+   "2022": 18360705,
+   "2023": 20678320,
+   "2024": 16877170,
+   "2025": 15051334
+  }
+ },
+ "7733461781": {
+  "inn": "7733461781",
+  "error": "HTTP Error 429: Too Many Requests"
+ },
+ "5005065402": {
+  "inn": "5005065402",
+  "error": "HTTP Error 429: Too Many Requests"
+ },
+ "5036008651": {
+  "inn": "5036008651",
+  "error": "HTTP Error 429: Too Many Requests"
+ },
+ "5043049641": {
+  "inn": "5043049641",
+  "error": "HTTP Error 429: Too Many Requests"
+ },
+ "7725733738": {
+  "inn": "7725733738",
+  "error": "HTTP Error 429: Too Many Requests"
+ },
+ "7721825219": {
+  "inn": "7721825219",
+  "error": "HTTP Error 429: Too Many Requests"
+ },
+ "7722753969": {
+  "inn": "7722753969",
+  "error": "HTTP Error 429: Too Many Requests"
+ },
+ "7721818162": {
+  "inn": "7721818162",
+  "error": "HTTP Error 429: Too Many Requests"
+ },
+ "7723421691": {
+  "inn": "7723421691",
+  "error": "HTTP Error 429: Too Many Requests"
+ },
+ "7729358654": {
+  "inn": "7729358654",
+  "error": "HTTP Error 403: Forbidden"
+ },
+ "7731352018": {
+  "inn": "7731352018",
+  "error": "HTTP Error 403: Forbidden"
+ },
+ "7723763977": {
+  "inn": "7723763977",
+  "error": "HTTP Error 429: Too Many Requests"
+ },
+ "7731533053": {
+  "inn": "7731533053",
+  "error": "HTTP Error 429: Too Many Requests"
+ },
+ "5012003358": {
+  "inn": "5012003358",
+  "error": "HTTP Error 429: Too Many Requests"
+ },
+ "5009121087": {
+  "inn": "5009121087",
+  "error": "HTTP Error 429: Too Many Requests"
+ },
+ "7729785198": {
+  "inn": "7729785198",
+  "error": "HTTP Error 429: Too Many Requests"
+ },
+ "5031137798": {
+  "inn": "5031137798",
+  "error": "HTTP Error 429: Too Many Requests"
+ },
+ "501216646000": {
+  "inn": "501216646000",
+  "error": "HTTP Error 429: Too Many Requests"
+ },
+ "5031106912": {
+  "inn": "5031106912",
+  "error": "HTTP Error 429: Too Many Requests"
+ },
+ "7717778460": {
+  "inn": "7717778460",
+  "error": "HTTP Error 429: Too Many Requests"
+ },
+ "7725449847": {
+  "inn": "7725449847",
+  "error": "HTTP Error 429: Too Many Requests"
+ },
+ "9718173849": {
+  "inn": "9718173849",
+  "error": "HTTP Error 429: Too Many Requests"
+ },
+ "5001158960": {
+  "inn": "5001158960",
+  "error": "HTTP Error 429: Too Many Requests"
+ },
+ "7751188630": {
+  "inn": "7751188630",
+  "error": "HTTP Error 429: Too Many Requests"
+ },
+ "5001029957": {
+  "inn": "5001029957",
+  "error": "HTTP Error 429: Too Many Requests"
+ },
+ "9719080330": {
+  "inn": "9719080330",
+  "error": "HTTP Error 429: Too Many Requests"
+ },
+ "3661051384": {
+  "inn": "3661051384",
+  "error": "HTTP Error 429: Too Many Requests"
+ },
+ "7714524933": {
+  "inn": "7714524933",
+  "error": "HTTP Error 429: Too Many Requests"
+ },
+ "5032252063": {
+  "inn": "5032252063",
+  "error": "HTTP Error 429: Too Many Requests"
+ },
+ "9704241312": {
+  "inn": "9704241312",
+  "error": "HTTP Error 429: Too Many Requests"
+ },
+ "9731151675": {
+  "inn": "9731151675",
+  "error": "HTTP Error 429: Too Many Requests"
+ },
+ "7729050901": {
+  "inn": "7729050901",
+  "error": "HTTP Error 429: Too Many Requests"
+ },
+ "7727218041": {
+  "inn": "7727218041",
+  "error": "HTTP Error 429: Too Many Requests"
+ },
+ "7718910217": {
+  "inn": "7718910217",
+  "error": "HTTP Error 429: Too Many Requests"
+ }
+}

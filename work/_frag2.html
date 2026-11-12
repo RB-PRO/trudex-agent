@@ -1,0 +1,14 @@
+div>',ttl:"Капитал",v:r[6],txt:r[8],chg:r[7],u:href})}`};m.addEventListener("click",e=>{const b=e.target.closest("[data-fs-year]");if(!b)return;render(b.getAttribute("data-fs-year"));const tg=document.getElementById("ah");if(tg&&window.bootstrap)window.bootstrap.Dropdown.getOrCreateInstance(tg).hide()});render(s.last_year||(s.years&&s.years[s.years.length-1]))})();
+
+function draw_fs_chart(code){
+  const labels=['2013','2014','2015','2016','2017','2018','2019','2020','2021','2022','2023','2024','2025'];
+  let series=null;
+  if(code==="2110")series=[[{meta:'0 руб.',value:'0'},{meta:'0 руб.',value:'0'},{meta:'77 млн руб.',value:'77033000'},{meta:'5,8 млрд руб.',value:'5806060000'},{meta:'6,9 млрд руб.',value:'6884763000'},{meta:'8,9 млрд руб.',value:'8935483000'},{meta:'9,7 млрд руб.',value:'9732507000'},{meta:'10,1 млрд руб.',value:'10075506000'},{meta:'13,8 млрд руб.',value:'13800985000'},{meta:'12,9 млрд руб.',value:'12853513000'},{meta:'17,5 млрд руб.',value:'17546450000'},{meta:'20,9 млрд руб.',value:'20870249000'},{meta:'19 млрд руб.',value:'18960168000'}]];
+  else if(code==="2400")series=[[{meta:'-615 тыс. руб.',value:'-615000'},{meta:'0 руб.',value:'0'},{meta:'493 тыс. руб.',value:'493000'},{meta:'5,6 млн руб.',value:'5564000'},{meta:'191,1 млн руб.',value:'191140000'},{meta:'171,9 млн руб.',value:'171905000'},{meta:'711,7 млн руб.',value:'711727000'},{meta:'1,4 млрд руб.',value:'1438740000'},{meta:'2,1 млрд руб.',value:'2064731000'},{meta:'2,9 млрд руб.',value:'2928498000'},{meta:'3,8 млрд руб.',value:'3751071000'},{meta:'3,9 млрд руб.',value:'3870652000'},{meta:'2,7 млрд руб.',value:'2745695000'}]];
+  if(!series)return;
+  new LineChart("#chart-"+code,{labels,series},{axisX:{position:"start",offset:35,scaleMinSpace:33,stretch:true},axisY:{scaleMinSpace:33,position:"end",offset:75,labelInterpolationFnc:e=>money_format(e)},fullWidth:false,showArea:true});
+}
+
+function add_fs_tooltips(){
+  document.querySelectorAll(".ct-point").forEach(x=>{
+    x.addEventListener(

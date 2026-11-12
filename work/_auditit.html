@@ -1,0 +1,317 @@
+<div style="font-family: Arial, sans-serif; font-size:16px; text-align:center; margin-top:50px;">Для работы сайта разрешите JavaScript и cookie, и <a href="" id="reload_link">обновите страницу</a>.</div><script>
+			document.cookie = "cerb-58464_antispam_token=67cc4763b81ac2ef6d6a5f301f034735; path=/; max-age=3600";
+			let matches = document.cookie.match(new RegExp("(?:^|; )cerb-58464_antispam_start=([^;]*)"));
+			let value = matches ? decodeURIComponent(matches[1]) : undefined;
+			if (value === "6af57116de241") {
+				
+				document.body.innerHTML = "";
+				setTimeout(function() {
+					location.reload();
+				}, 400);
+			}
+			else if(value === undefined) document.body.innerHTML = '<div style="font-family: Arial, sans-serif; font-size:16px; text-align:center; margin-top:50px;">Для работы сайта необходимо разрешить в браузере cookie, и <a href="" id="reload_link">обновить страницу</a>.</div>';
+			else document.body.innerHTML = '<div style="font-family: Arial, sans-serif; font-size:16px; text-align:center; margin-top:50px;">Не пройдена защита от ботов. Проверьте, что в браузере разрешены  cookie и <a href="" id="reload_link">обновите страницу</a>.</div>';
+		</script>	<script>
+(function () {
+    function setCookie(name, value, maxAgeSeconds) {
+        document.cookie =
+            name + '=' + encodeURIComponent(value) +
+            '; path=/' +
+            '; max-age=' + maxAgeSeconds +
+            '; SameSite=Lax';
+    }
+
+    function safe(fn, fallback) {
+        try {
+            return fn();
+        } catch (e) {
+            return fallback;
+        }
+    }
+
+    function getNavigatorWebdriverInfo() {
+        return safe(function () {
+            var desc = Object.getOwnPropertyDescriptor(Navigator.prototype, 'webdriver');
+            var getterString = (desc && typeof desc.get === 'function') ? String(desc.get) : '';
+
+            return {
+                // Само значение navigator.webdriver
+                value: navigator.webdriver,
+
+                // Есть ли descriptor вообще
+                desc_exists: !!desc,
+
+                // Есть ли getter
+                desc_has_getter: !!(desc && typeof desc.get === 'function'),
+
+                // Похож ли getter на нативный
+                desc_getter_native: getterString.indexOf('[native code]') !== -1
+            };
+        }, {
+            value: null,
+            desc_exists: false,
+            desc_has_getter: false,
+            desc_getter_native: false
+        });
+    }
+
+    function getIframeWebdriver() {
+        return safe(function () {
+            var iframe = document.createElement('iframe');
+            iframe.style.display = 'none';
+            iframe.setAttribute('aria-hidden', 'true');
+
+            var root = document.documentElement || document.body;
+            if (!root) {
+                return null;
+            }
+
+            root.appendChild(iframe);
+
+            var result = null;
+            try {
+                result = iframe.contentWindow &&
+                         iframe.contentWindow.navigator
+                         ? iframe.contentWindow.navigator.webdriver
+                         : null;
+            } catch (e) {
+                result = null;
+            }
+
+            if (iframe.parentNode) {
+                iframe.parentNode.removeChild(iframe);
+            }
+
+            return result;
+        }, null);
+    }
+
+    function getAutomationFlags() {
+        return safe(function () {
+            var ua = navigator.userAgent || '';
+
+            return {
+                // Следы headless/automation в UA
+                ua_headless: /HeadlessChrome|PhantomJS|SlimerJS|Electron/i.test(ua),
+
+                // Признаки Chrome-окружения
+                has_window_chrome: !!window.chrome,
+                has_chrome_runtime: !!(window.chrome && window.chrome.runtime)
+            };
+        }, {
+            ua_headless: false,
+            has_window_chrome: false,
+            has_chrome_runtime: false
+        });
+    }
+
+    function getPluginsInfo() {
+        return {
+            plugins_length: safe(function () {
+                return navigator.plugins ? navigator.plugins.length : null;
+            }, null),
+
+            mime_types_length: safe(function () {
+                return navigator.mimeTypes ? navigator.mimeTypes.length : null;
+            }, null)
+        };
+    }
+
+    function getWebGLFlags() {
+        return safe(function () {
+            var canvas = document.createElement('canvas');
+            var gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+
+            if (!gl) {
+                return {
+                    supported: false,
+                    debug_ext: false,
+                    vendor_present: false,
+                    renderer_present: false,
+                    renderer_suspicious: false
+                };
+            }
+
+            var debugInfo = gl.getExtension('WEBGL_debug_renderer_info');
+            var vendor = null;
+            var renderer = null;
+
+            if (debugInfo) {
+                vendor = gl.getParameter(debugInfo.UNMASKED_VENDOR_WEBGL);
+                renderer = gl.getParameter(debugInfo.UNMASKED_RENDERER_WEBGL);
+            }
+
+            var suspicious = false;
+            if (renderer) {
+                suspicious = /swiftshader|llvmpipe|software|mesa offscreen|virtualbox|vmware/i.test(renderer);
+            }
+
+            return {
+                supported: true,
+                debug_ext: !!debugInfo,
+                vendor_present: !!vendor,
+                renderer_present: !!renderer,
+                renderer_suspicious: suspicious
+            };
+        }, {
+            supported: false,
+            debug_ext: false,
+            vendor_present: false,
+            renderer_present: false,
+            renderer_suspicious: false
+        });
+    }
+
+    function getCanvasFlags() {
+        return safe(function () {
+            function renderOnce() {
+                var canvas = document.createElement('canvas');
+                canvas.width = 220;
+                canvas.height = 40;
+
+                var ctx = canvas.getContext('2d');
+                if (!ctx) {
+                    return null;
+                }
+
+                ctx.textBaseline = 'top';
+                ctx.font = '14px Arial';
+                ctx.fillStyle = '#f60';
+                ctx.fillRect(125, 1, 62, 20);
+                ctx.fillStyle = '#069';
+                ctx.fillText('jsinfo_canvas_test', 2, 2);
+                ctx.fillStyle = 'rgba(102, 204, 0, 0.7)';
+                ctx.fillText('jsinfo_canvas_test', 4, 4);
+
+                return canvas.toDataURL();
+            }
+
+            var c1 = renderOnce();
+            var c2 = renderOnce();
+
+            return {
+                supported: c1 !== null && c2 !== null,
+                consistent: c1 !== null && c2 !== null ? (c1 === c2) : false
+            };
+        }, {
+            supported: false,
+            consistent: false
+        });
+    }
+
+    function getPermissionsInfo(done) {
+        var finished = false;
+
+        function finish(result) {
+            if (finished) {
+                return;
+            }
+            finished = true;
+            done(result);
+        }
+
+        var fallback = {
+            supported: false,
+            notifications: null,
+            notification_permission: safe(function () {
+                return (typeof Notification !== 'undefined') ? Notification.permission : null;
+            }, null)
+        };
+
+        try {
+            if (!navigator.permissions || !navigator.permissions.query) {
+                finish(fallback);
+                return;
+            }
+
+            navigator.permissions.query({ name: 'notifications' }).then(function (result) {
+                finish({
+                    supported: true,
+                    notifications: result ? result.state : null,
+                    notification_permission: safe(function () {
+                        return (typeof Notification !== 'undefined') ? Notification.permission : null;
+                    }, null)
+                });
+            }).catch(function () {
+                finish(fallback);
+            });
+
+            // Страховка, если Promise зависнет или API поведёт себя странно
+            setTimeout(function () {
+                finish(fallback);
+            }, 800);
+        } catch (e) {
+            finish(fallback);
+        }
+    }
+
+    function collectAndStore(permissionsInfo) {
+        var webdriverInfo = getNavigatorWebdriverInfo();
+        var automationFlags = getAutomationFlags();
+        var pluginsInfo = getPluginsInfo();
+        var webglFlags = getWebGLFlags();
+        var canvasFlags = getCanvasFlags();
+
+        var data = {
+            // 1. navigator.webdriver + краткая информация о descriptor
+            webdriver: webdriverInfo.value,
+            webdriver_desc_exists: webdriverInfo.desc_exists,
+            webdriver_desc_has_getter: webdriverInfo.desc_has_getter,
+            webdriver_desc_getter_native: webdriverInfo.desc_getter_native,
+
+            // 2. iframe leakage
+            iframe_webdriver: getIframeWebdriver(),
+
+            // 3. Следы automation / headless (без хранения длинного UA)
+            ua_headless: automationFlags.ua_headless,
+            has_window_chrome: automationFlags.has_window_chrome,
+            has_chrome_runtime: automationFlags.has_chrome_runtime,
+
+            // 4. plugins / mimeTypes
+            plugins_length: pluginsInfo.plugins_length,
+            mime_types_length: pluginsInfo.mime_types_length,
+
+            // 5. WebGL (только короткие флаги)
+            webgl_supported: webglFlags.supported,
+            webgl_debug_ext: webglFlags.debug_ext,
+            webgl_vendor_present: webglFlags.vendor_present,
+            webgl_renderer_present: webglFlags.renderer_present,
+            webgl_renderer_suspicious: webglFlags.renderer_suspicious,
+
+            // 6. Canvas (без хранения длинного fingerprint)
+            canvas_supported: canvasFlags.supported,
+            canvas_consistent: canvasFlags.consistent,
+
+            // 7. Permissions API
+            permissions_supported: permissionsInfo.supported,
+            permissions_notifications: permissionsInfo.notifications,
+            notification_permission: permissionsInfo.notification_permission,
+
+            // 8. Язык браузера
+            language: safe(function () {
+                return navigator.language || null;
+            }, null),
+            languages: safe(function () {
+                return navigator.languages ? Array.prototype.slice.call(navigator.languages) : null;
+            }, null),
+
+            // 9. Тайм-зона пользователя
+            timezone: safe(function () {
+                return Intl.DateTimeFormat().resolvedOptions().timeZone || null;
+            }, null),
+            timezone_offset: safe(function () {
+                return new Date().getTimezoneOffset();
+            }, null),
+
+            // 10. Время пользователя в timestamp
+            client_timestamp: Date.now()
+        };
+
+        setCookie('jsinfo', JSON.stringify(data), 3600);
+    }
+
+    getPermissionsInfo(function (permissionsInfo) {
+        collectAndStore(permissionsInfo);
+    });
+})();
+</script>
